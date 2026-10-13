@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 70" width="120" height="70">
+  <defs>
+    <style>
+      .letter { font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif; font-size: 26px; font-weight: 800; fill: #1E293B; }
+      .subtext { font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif; font-size: 8px; font-weight: 700; fill: #64748B; letter-spacing: 3.5px; }
+    </style>
+  </defs>
+  <!-- G Box (Red) -->
+  <rect x="8" y="6" width="32" height="32" rx="4" fill="#FFFFFF" stroke="#E11D48" stroke-width="3"/>
+  <text x="24" y="31" class="letter" text-anchor="middle">G</text>
+
+  <!-- N Box (Grey) -->
+  <rect x="44" y="6" width="32" height="32" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3"/>
+  <text x="60" y="31" class="letter" text-anchor="middle">N</text>
+
+  <!-- V Box (Green) -->
+  <rect x="80" y="6" width="32" height="32" rx="4" fill="#FFFFFF" stroke="#65A30D" stroke-width="3"/>
+  <text x="96" y="31" class="letter" text-anchor="middle">V</text>
+
+  <!-- COMMODITIES text -->
+  <text x="63" y="56" class="subtext" text-anchor="middle">COMMODITIES</text>
+</svg>

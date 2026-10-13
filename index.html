@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GNV Commodities — Enterprise ERP System</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  
+  <!-- Modern ERP Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=18">
+</head>
+<body>
+
+  <!-- Ambient Floating App Canvas Frame -->
+  <div id="app-container">
+
+    <!-- Sleek Left Docked Sidebar Navigation -->
+    <aside id="sidebar">
+      
+      <!-- Top Brand Squircle Logo -->
+      <a href="#dashboard" class="brand-squircle-logo" title="GNV Commodities Enterprise ERP">
+        <div class="brand-sparkle-icon">
+          <svg viewBox="0 0 100 58" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
+            <!-- G Box (Red) -->
+            <rect x="3" y="4" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#E11D48" stroke-width="2.6"/>
+            <text x="17" y="25" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="19" font-weight="800" fill="#1E293B" text-anchor="middle">G</text>
+
+            <!-- N Box (Grey) -->
+            <rect x="36" y="4" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2.6"/>
+            <text x="50" y="25" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="19" font-weight="800" fill="#1E293B" text-anchor="middle">N</text>
+
+            <!-- V Box (Green) -->
+            <rect x="69" y="4" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#65A30D" stroke-width="2.6"/>
+            <text x="83" y="25" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="19" font-weight="800" fill="#1E293B" text-anchor="middle">V</text>
+
+            <!-- COMMODITIES text -->
+            <text x="51" y="47" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="7.5" font-weight="800" fill="#64748B" letter-spacing="2.2" text-anchor="middle">COMMODITIES</text>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Navigation Icons Stack -->
+      <nav class="sidebar-nav-stack">
+        <ul class="sidebar-menu">
+          
+          <li class="menu-item" data-tooltip="Dashboard">
+            <a href="#dashboard" class="menu-link active" data-nav="dashboard">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="pie-chart"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Sales Orders">
+            <a href="#sales-orders" class="menu-link" data-nav="sales-orders">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="file-text"></i></span>
+              <span class="sidebar-mini-badge" id="badge-so-count">2</span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Invoices">
+            <a href="#invoices" class="menu-link" data-nav="invoices">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="mail"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Order Allocation (Core Hub)">
+            <a href="#allocation" class="menu-link" data-nav="allocation">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="layers"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Warehouse Orders">
+            <a href="#warehouse-orders" class="menu-link" data-nav="warehouse-orders">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="git-merge"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Regional Warehouses">
+            <a href="#warehouses" class="menu-link" data-nav="warehouses">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="bar-chart-2"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Stock Batches & FEFO">
+            <a href="#inventory" class="menu-link" data-nav="inventory">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="boxes"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Packages & Dispatch">
+            <a href="#packages" class="menu-link" data-nav="packages">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="box"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Shipments">
+            <a href="#shipments" class="menu-link" data-nav="shipments">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="truck"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Transfer Orders">
+            <a href="#transfers" class="menu-link" data-nav="transfers">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="arrow-left-right"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Inventory Inward">
+            <a href="#inward" class="menu-link" data-nav="inward">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="arrow-down-left"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Customers Master">
+            <a href="#customers" class="menu-link" data-nav="customers">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="users"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Item Master">
+            <a href="#item-master" class="menu-link" data-nav="item-master">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="package"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Discount Schemes">
+            <a href="#discounts" class="menu-link" data-nav="discounts">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="percent"></i></span>
+            </a>
+          </li>
+
+          <li class="menu-item" data-tooltip="Settings & Profile">
+            <a href="#settings" class="menu-link" data-nav="settings">
+              <span class="active-indicator-bar"></span>
+              <span class="menu-icon"><i data-lucide="user"></i></span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Bottom Exit / Logout Action Button -->
+      <div class="sidebar-bottom-actions">
+        <a href="#settings" class="sidebar-exit-btn" title="Sign Out / Preferences">
+          <i data-lucide="log-out"></i>
+        </a>
+      </div>
+
+    </aside>
+
+    <!-- Main Stage Canvas (Rounded Soft Light Surface) -->
+    <div id="main-stage">
+
+      <!-- Header with Greeting & Modern Pill Controls -->
+      <header id="topbar">
+        
+        <div class="topbar-greeting">
+          <h1 class="greeting-heading">Hi, Deepti</h1>
+          <p class="greeting-subtitle">GNV Commodities Pvt. Ltd. &bull; 4 Regional Hubs</p>
+        </div>
+
+        <div class="topbar-controls">
+          
+          <!-- Clean Pill Search Bar -->
+          <div class="search-pill-container">
+            <input type="text" id="topbar-search" class="topbar-search-input" placeholder="Search orders, invoices, items...">
+            <button class="search-pill-btn" type="button" title="Search">
+              <i data-lucide="search"></i>
+            </button>
+          </div>
+
+          <!-- Quick Action Pill: New Order -->
+          <button id="btn-quick-new" class="action-pill-btn btn-pill-accent" title="New Sales Order" onclick="window.location.hash='#sales-orders/new'">
+            <i data-lucide="plus"></i>
+            <span>New Order</span>
+          </button>
+
+          <!-- Notification Pill -->
+          <button class="action-pill-btn btn-icon-only" title="Notifications">
+            <i data-lucide="bell"></i>
+            <span class="notification-dot"></span>
+          </button>
+
+          <!-- User Profile Squircle Avatar -->
+          <div class="user-avatar-squircle" onclick="window.location.hash='#settings'" title="Deepti Agarwal — Software Developer">
+            <div class="avatar-face">DA</div>
+          </div>
+
+        </div>
+
+      </header>
+
+      <!-- Main Content Dynamic View Area -->
+      <main id="main-content">
+        <!-- Rendered dynamically by js/app.js -->
+      </main>
+
+    </div>
+
+  </div>
+
+  <div id="toast-container"></div>
+
+  <!-- Root Script -->
+  <script type="module" src="js/app.js?v=18"></script>
+
+</body>
+</html>
